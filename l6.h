@@ -1,0 +1,23 @@
+
+void flip_alrm();
+void init_counter();
+void init_tcnt3_audio_volume();
+void init_tcnt2_dimmer();
+void init_tcnt1_audio_freq();
+void update_clock(uint16_t numMS);
+void dec_clk(uint16_t numMS);
+void dec_alrm(uint16_t numMS);
+void update_alrm(uint16_t numMS);
+void read_pushbuttons();
+void write_7seg(uint8_t update_or_display);
+void write_bargraph(uint8_t data);
+void spi_init();
+void toggle_colon();
+void mode_decrement(uint8_t LR);
+void mode_increment(uint8_t LR);
+void read_encoders();
+void encoder_rotation();
+void init_adc();
+uint16_t delta_Time(uint32_t *prev_msCLK, uint32_t *c_msCLK);
+uint16_t readADC()	;
+void military_std();
